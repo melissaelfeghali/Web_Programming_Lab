@@ -27,7 +27,7 @@ body {
 
 section h1,
 footer h1,
-nav h1 {
+nav {
   font-family: "Day Roman", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: normal;
@@ -46,4 +46,25 @@ header h2{
     font-family: "Day Roman", Arial, sans-serif;
     font-size: 1.1em;
     font-weight: normal;
+}
+
+nav {
+    position: relative;
+    float: right;
+}
+
+nav li{
+    float: left;
+    padding: 10px;
+}
+
+nav a:link{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #181818;
+}
+
+nav a:hover{
+    color: #760001; 
+    border-bottom: 3px solid #760001;
 }
