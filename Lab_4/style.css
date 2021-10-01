@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: fit-content;
   min-height: 100%;
 }
 
@@ -64,7 +64,7 @@ header h2 {
 }
 
 nav {
-  list-style-type: none ;
+  list-style-type: none;
   text-align: right;
   float: right;
 }
@@ -88,7 +88,7 @@ nav a:hover {
 #banner_image {
   background-image: url(images/sanfrancisco.jpg);
   background-position: center;
-    background-size: cover;
+  background-size: cover;
   border-radius: 5px;
   clear: both;
   height: 200px;
@@ -108,4 +108,79 @@ nav a:hover {
 
 .red_button {
   background-image: url(images/red_background.png);
+  background-repeat: repeat-x;
+  background-position-y: center;
+  font-size: 1.2em;
+  border: 1px solid #760001;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+
+article {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  display: inline-block;
+  background-color: #706b64;
+  color: white;
+  text-align: center;
+  width: 25%;
+  border-radius: 15px;
+  text-shadow: 1px 1px #1c1a19;
+}
+
+article p {
+  font-size: 0.8em;
+}
+
+#arrow {
+  position: relative;
+  right: 215px;
+  top: 35px;
+}
+
+footer {
+  background-image: url(images/top.png), url(images/line.png);
+  background-repeat: no-repeat, repeat-x;
+  background-position-x: 50%;
+}
+
+footer p,
+ul {
+  font-size: 0.8em;
+}
+
+footer h1 {
+  font-size: 1.1em;
+}
+
+footer div {
+  float: left;
+  width: 30%;
+}
+
+#my_friends ul {
+  float: left;
+  list-style-image: url(images/external_link.png);
+}
+
+#my_friends a {
+  text-decoration: none;
+  color: #760001;
+}
+
+#my_pictures img {
+  clear: left;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+#zozor_picture img {
+  border: 1px solid black;
 }
