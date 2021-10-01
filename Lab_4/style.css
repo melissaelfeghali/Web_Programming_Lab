@@ -23,6 +23,11 @@ body {
   background-image: url(images/yellow_background.png);
   font-family: "Trebuchet MS", Arial, sans-serif;
   color: #181818;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
 }
 
 section h1,
@@ -33,38 +38,74 @@ nav {
   font-weight: normal;
 }
 
-header h1{
-    font-family: 'BallparkWeiner', Arial, sans-serif;
-    font-size: 2.5em;
-    font-weight: normal;
-    float: left;
-    padding-left: 10px;
+header {
+  background-image: url(images/line.png);
+  background-repeat: repeat-x;
+  background-position-y: bottom;
 }
 
-header h2{
-    clear: left;
-    font-family: "Day Roman", Arial, sans-serif;
-    font-size: 1.1em;
-    font-weight: normal;
+#main_title img,
+h1 {
+  display: inline;
+  float: left;
+}
+
+header h1 {
+  font-family: "BallparkWeiner", Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+header h2 {
+  font-family: "Day Roman", Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
 }
 
 nav {
-    position: relative;
-    float: right;
+  list-style-type: none ;
+  text-align: right;
+  float: right;
 }
 
-nav li{
-    float: left;
-    padding: 10px;
+nav li {
+  display: inline;
+  padding: 10px;
 }
 
-nav a:link{
-    text-decoration: none;
-    font-size: 1.3em;
-    color: #181818;
+nav a:link {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #181818;
 }
 
-nav a:hover{
-    color: #760001; 
-    border-bottom: 3px solid #760001;
+nav a:hover {
+  color: #760001;
+  border-bottom: 3px solid #760001;
+}
+
+#banner_image {
+  background-image: url(images/sanfrancisco.jpg);
+  background-position: center;
+    background-size: cover;
+  border-radius: 5px;
+  clear: both;
+  height: 200px;
+  position: relative;
+}
+
+#banner_description {
+  background-color: rgba(24, 24, 24, 0.8);
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.red_button {
+  background-image: url(images/red_background.png);
 }
