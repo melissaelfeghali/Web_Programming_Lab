@@ -1,21 +1,49 @@
 @font-face {
-    font-family: 'Trebuchet MS';
-    src: url(fonts/trebuc.ttf);
-    font-style: normal;
-    font-weight: normal;
+  font-family: "Trebuchet MS";
+  src: url(fonts/trebuc.ttf);
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'BallparkWeiner';
-    src: url(fonts/BALLW___.TTF);
-    font-style: normal;
-    font-weight: normal;
+  font-family: "BallparkWeiner";
+  src: url(fonts/BALLW___.TTF);
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Day Roman';
-    src: url(fonts/DAYROM__.ttf);
-    font-style: normal;
-    font-weight: normal;
+  font-family: "Day Roman";
+  src: url(fonts/DAYROM__.ttf);
+  font-style: normal;
+  font-weight: normal;
 }
 
+body {
+  background-image: url(images/yellow_background.png);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #181818;
+}
+
+section h1,
+footer h1,
+nav h1 {
+  font-family: "Day Roman", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+header h1{
+    font-family: 'BallparkWeiner', Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    float: left;
+    padding-left: 10px;
+}
+
+header h2{
+    clear: left;
+    font-family: "Day Roman", Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: normal;
+}
