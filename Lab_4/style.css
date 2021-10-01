@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url(fonts/trebuc.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url(fonts/BALLW___.TTF);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Day Roman';
+    src: url(fonts/DAYROM__.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
