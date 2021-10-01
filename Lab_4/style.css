@@ -42,12 +42,12 @@ header {
   background-image: url(images/line.png);
   background-repeat: repeat-x;
   background-position-y: bottom;
+  padding: 10px;
 }
 
 #main_title img,
 h1 {
   display: inline;
-  float: left;
 }
 
 header h1 {
@@ -65,13 +65,15 @@ header h2 {
 
 nav {
   list-style-type: none;
-  text-align: right;
+  position: relative;
   float: right;
+  bottom: 60px;
+  right: 20px;
 }
 
 nav li {
   display: inline;
-  padding: 10px;
+  margin: 10px;
 }
 
 nav a:link {
@@ -92,17 +94,16 @@ nav a:hover {
   border-radius: 5px;
   clear: both;
   height: 200px;
-  position: relative;
 }
 
 #banner_description {
   background-color: rgba(24, 24, 24, 0.8);
   font-size: 0.8em;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 155px;
   border-radius: 5px;
   color: white;
-  padding: 10px;
+  padding: 15px;
   text-align: left;
 }
 
@@ -118,31 +119,34 @@ nav a:hover {
   text-decoration: none;
   text-align: center;
   position: relative;
+  left: 495px;
+}
+
+section{
+    float: left;
+    margin: 20px;
 }
 
 article {
   float: left;
-  width: 75%;
+  width: 65%;
+  margin: 5px;
 }
+
+article p {
+    font-size: 0.8em;
+  }
 
 aside {
   display: inline-block;
   background-color: #706b64;
   color: white;
   text-align: center;
-  width: 25%;
-  border-radius: 15px;
+  width: 30%;
   text-shadow: 1px 1px #1c1a19;
-}
-
-article p {
-  font-size: 0.8em;
-}
-
-#arrow {
-  position: relative;
-  right: 215px;
-  top: 35px;
+  margin: 3px;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 footer {
@@ -162,11 +166,19 @@ footer h1 {
 
 footer div {
   float: left;
-  width: 30%;
+  margin: 1px;
+  width: auto;
 }
 
-#my_friends ul {
-  float: left;
+#tweet{
+    margin-right: 50px;
+}
+
+#my_pictures{
+    margin-right: 20px;
+}
+
+#my_friends ul{
   list-style-image: url(images/external_link.png);
 }
 
@@ -176,7 +188,7 @@ footer div {
 }
 
 #my_pictures img {
-  clear: left;
+  display: inline;
   border: 1px solid black;
   margin: 2px;
 }
