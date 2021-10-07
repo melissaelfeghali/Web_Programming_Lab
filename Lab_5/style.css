@@ -3,7 +3,6 @@
     background-color: #333;
     justify-content: center;
     display: inline-block;
-    text-align: center;
 }
 
 .navbar{
@@ -46,6 +45,7 @@ nav a:active{
 
 .banner{
     background-image: url(pictures/banner.jpg);
+    background-size: cover;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -101,6 +101,7 @@ span{
 .grid-item{
     background-color: black;
     padding: 20px;
+    
 }
 
 .item1, .item5{
@@ -112,6 +113,40 @@ span{
     grid-row: span 2;
 }
 
+.info{
+    text-align: center;
+    color: #f6d601;
+    background-color: #333;
+    padding: 10px;
+}
 
+.num{
+    font-size: 15px;
+    font-weight: bold;
+}
 
+@media screen and (max-width: 900px){
+    .banner{
+        background-image: url(pictures/banner2.jpeg);
+        background-size: cover;
+    }
+
+    .banner p:hover{
+        background-color: #333;
+        padding: 10px;
+    }
+    
+    .navbar li{
+        display: table;
+    }
+
+    .contact_msg{
+        font-size: 20px;
+    }
+
+    .logo{
+        text-align: center;
+        float: none;
+    }
+}
 
