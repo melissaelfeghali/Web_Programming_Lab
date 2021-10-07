@@ -2,14 +2,13 @@
     padding: 5px;
     background-color: #333;
     justify-content: center;
-    display: inline-block;
+    display: flex;
 }
 
 .navbar{
     background-color: #333;
-    clear: both;
-    overflow: auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 nav{
@@ -25,7 +24,6 @@ nav{
 .logo {
     margin-left: 16px;
     vertical-align: middle;
-    float: left;
 }
 
 .navbar a{
@@ -136,17 +134,9 @@ span{
         padding: 10px;
     }
     
-    .navbar li{
-        display: table;
-    }
-
     .contact_msg{
         font-size: 20px;
     }
 
-    .logo{
-        text-align: center;
-        float: none;
-    }
 }
 
