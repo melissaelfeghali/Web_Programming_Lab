@@ -99,7 +99,7 @@ span{
 .grid-item{
     background-color: black;
     padding: 20px;
-    
+    overflow: scroll;
 }
 
 .item1, .item5{
@@ -136,6 +136,10 @@ span{
     
     .contact_msg{
         font-size: 20px;
+    }
+
+    .grid-item{
+        grid-column: span 3;
     }
 
 }
