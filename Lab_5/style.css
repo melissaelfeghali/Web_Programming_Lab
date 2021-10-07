@@ -1,0 +1,45 @@
+.navbar ul{
+    padding: 10px;
+    background-color: #333;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar{
+    background-color: #333;
+    clear: both;
+    overflow: auto;
+    text-align: center;
+}
+
+nav{
+    display: inline-block;
+    width: 80%;
+}
+
+.navbar li{
+    display: inline;
+    padding: 10px;
+}
+
+.logo {
+    margin-left: 16px;
+    vertical-align: middle;
+    float: left;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: gray;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+nav a:active{
+    text-decoration: underline;
+}
