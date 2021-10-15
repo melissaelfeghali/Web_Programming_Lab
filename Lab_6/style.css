@@ -1,0 +1,45 @@
+.sub-container{
+    background-color: rebeccapurple; 
+    margin: auto; 
+    width: 50%;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.sub-container input{
+        font-size: 20px;
+    }
+
+.container h1{
+    text-align: center; 
+    font-size: 40px;
+}
+
+.container{
+    padding: 90px; 
+    background-color: rgb(159, 122, 228);
+}
+
+@media only screen and (max-width: 750px){
+    .container h1{
+        font-size: 20px;
+        color: white;
+    }
+
+    .sub-container input{
+        font-size: 10px;
+        color: white;
+        background-color: rebeccapurple;
+    }
+
+    .sub-container{
+        font-size: 15px;
+        color: rebeccapurple;
+        background-color: white;
+    }
+
+    .container{
+        padding: 20px;
+        background-color: rebeccapurple
+    }
+};
