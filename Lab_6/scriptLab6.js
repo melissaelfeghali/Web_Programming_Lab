@@ -1,3 +1,5 @@
+let results = new Array();
+
 function welcome(){
     let person = prompt("Please enter your first and last name", "Jane Doe");
     if (person != null) {
@@ -9,28 +11,58 @@ function add(){
     let a = document.getElementById("a").value ;
     let b = document.getElementById("b").value;
     document.getElementById("result").innerHTML = Number(a) + Number(b) ;
+    results.push(document.getElementById("result").value)
 }
 
 function subtract(){
     let a = document.getElementById("a").value ;
     let b = document.getElementById("b").value;
     document.getElementById("result").innerHTML = Number(a) - Number(b) ;
+    results.push(document.getElementById("result").value)
 }
 
 function multiply(){
     let a = document.getElementById("a").value ;
     let b = document.getElementById("b").value;
     document.getElementById("result").innerHTML = Number(a) * Number(b) ;
+    results.push(document.getElementById("result").value)
 }
 
 function divide(){
     let a = document.getElementById("a").value ;
     let b = document.getElementById("b").value;
     document.getElementById("result").innerHTML = Number(a) / Number(b) ;
+    results.push(document.getElementById("result").value)
 }
 
 function printArray(){
+    document.getElementById("arrayvalues").innerHTML = results.join(", ");
+}
 
+function calculate(value){
+    let a = document.getElementById("a").value ;
+    let b = document.getElementById("b").value;
+
+    if (value.id == "add"){
+        document.getElementById("result").innerHTML = Number(a) + Number(b) ;
+        results.push(Number(a) + Number(b)); 
+    }
+
+    else if (value.id == "subtract") {
+        document.getElementById("result").innerHTML = Number(a) - Number(b) ;
+        results.push(Number(a) - Number(b)) ;
+        
+    } else if (value.id == "multiply") {
+        document.getElementById("result").innerHTML = Number(a) * Number(b) ;
+        results.push(Number(a) * Number(b));
+        
+    } else if (value.id == "divide") {
+        document.getElementById("result").innerHTML = Number(a) / Number(b) ;
+        results.push(Number(a) / Number(b));
+
+    } else {
+        document.getElementById("arrayvalues").innerHTML = results.join(", ");
+    }
 }
 
 // Question 6 
