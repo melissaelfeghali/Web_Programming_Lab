@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List Example</title>
+
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+    
+        li button {
+            font-size: 8px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </div>
+
+    <ul></ul>
+
+    <script>
+        // Question 1 
+        const ul_reference = document.querySelector('ul');
+        const input_reference = document.querySelector('#item');
+        const button_reference = document.querySelector('button');
+
+        // Question 2 
+        function onClick() {
+            // Question 3 
+            let input_value = document.getElementById('item').value;
+
+            // Question 4 
+            let input_element = document.getElementById('item');
+            input_element.value = "" ;
+
+            // Question 5
+            const list_item = document.createElement('li');
+            const span_element = document.createElement('span');
+            const button_element = document.createElement('button');
+
+            // Question 6
+            list_item.appendChild(span_element);
+            list_item.appendChild(button_element);
+
+            // Question 7 
+            span_element.textContent = input_value;
+            button_element.textContent = 'Delete';
+
+            // Question 8
+            ul_reference.appendChild(list_item)
+
+            // Question 9
+            function deleteFunction() {
+                ul_reference.removeChild(list_item);
+            }
+            button_element.addEventListener('click', deleteFunction);
+        }
+    </script>
+</body>
+</html>
