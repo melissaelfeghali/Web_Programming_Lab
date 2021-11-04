@@ -1,5 +1,36 @@
 // Classes
 
+// Questions 1 to 7
+class Employee{
+    static num_employee = 0 ;
+    static addEmployee() { Employee.num_employee ++ ;}
+
+    constructor(name, email, age, address, yof_experience){
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.address = address;
+        this.yof_experience = yof_experience;
+        this.salary = 1000;
+    }
+
+    print(){
+        console.log(this.name);
+        console.log(this.email);
+        console.log(this.age);
+        console.log(this.address);
+        console.log(this.yof_experience);
+        console.log(this.salary);
+    }
+
+    raiseSalary(){
+        this.salary = this.salary * 1.5;
+    }
+}
+
+
+// Questions 8 to 16
+
 // Objects
 
 // Questions 1, 2 & 3 
